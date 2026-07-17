@@ -46,6 +46,7 @@ function Get-UnrealInstallations {
     $commonRoots = @(
         'C:\Program Files\Epic Games',
         'D:\Epic Games',
+        'D:\Epic UE5',
         'C:\Program Files\Unreal Engine',
         'D:\Unreal Engine'
     )
@@ -61,6 +62,31 @@ function Get-UnrealInstallations {
                 $editor = Join-Path $_.FullName 'Engine\Binaries\Win64\UnrealEditor.exe'
                 if (Test-Path -LiteralPath $editor) {
                     $found.Add($_.FullName)
+                }
+            }
+    }
+
+    $manifestRoot = 'C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests'
+    if (Test-Path -LiteralPath $manifestRoot) {
+        Get-ChildItem -LiteralPath $manifestRoot -Filter '*.item' -File -ErrorAction SilentlyContinue |
+            ForEach-Object {
+                try {
+                    $manifest = Get-Content -LiteralPath $_.FullName -Raw -Encoding UTF8 |
+                        ConvertFrom-Json
+                    $installPath = [string]$manifest.InstallLocation
+                    $launchExecutable = [string]$manifest.LaunchExecutable
+                    $isUnrealEditor = $manifest.DisplayName -like 'Unreal Engine*' -or
+                        $launchExecutable -like '*UnrealEditor.exe'
+
+                    if ($installPath -and $isUnrealEditor) {
+                        $editor = Join-Path $installPath 'Engine\Binaries\Win64\UnrealEditor.exe'
+                        if (Test-Path -LiteralPath $editor) {
+                            $found.Add($installPath)
+                        }
+                    }
+                }
+                catch {
+                    # Ignore malformed or unrelated launcher manifests.
                 }
             }
     }

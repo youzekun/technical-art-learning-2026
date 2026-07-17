@@ -1,0 +1,22 @@
+﻿UE DEVELOPMENT ENVIRONMENT CHECK
+Time: 2026-07-17 19:01:55
+
+
+Item                                  Status  Details                                                                         
+----                                  ------  -------                                                                         
+Epic Games Launcher                   OK      C:\Program Files\Epic Games\Launcher\Portal\Binaries\Win64\EpicGamesLauncher.exe
+Unreal Editor                         OK      D:\Epic UE5\UE_5.8                                                              
+Visual Studio                         OK      D:\VScode                                                                       
+Game development with C++             OK      Microsoft.VisualStudio.Workload.NativeGame                                      
+MSVC x64/x86 build tools              OK      Microsoft.VisualStudio.Component.VC.Tools.x86.x64                               
+Windows 11 SDK 10.0.26100             OK      Microsoft.VisualStudio.Component.Windows11SDK.26100                             
+Visual Studio Tools for Unreal Engine MISSING Microsoft.VisualStudio.Component.VC.Unreal                                      
+Blueprint debugger tools              MISSING Microsoft.VisualStudio.Component.VC.Unreal.Blueprint                            
+Unreal Engine Test Adapter            MISSING Microsoft.VisualStudio.Component.VC.Unreal.TestAdapter                          
+MSVC versions                         INFO    14.50.35717                                                                     
+Windows SDK versions                  INFO    10.0.26100.0                                                                    
+Drive C                               INFO    136.8 GB free / 300.0 GB total                                                  
+Drive D                               INFO    167.3 GB free / 631.2 GB total                                                  
+UE C++ project check                  MANUAL  After installing UE, pass a project directory or .uproject with -ProjectPath
+
+Summary: 3 required item(s) are missing. Install them and run this check again.
