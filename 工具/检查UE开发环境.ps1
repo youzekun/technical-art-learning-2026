@@ -148,42 +148,58 @@ else {
 $vsComponents = @(
     [pscustomobject]@{
         Name = 'Game development with C++'
-        Id = 'Microsoft.VisualStudio.Workload.NativeGame'
+        Ids = @('Microsoft.VisualStudio.Workload.NativeGame')
     }
     [pscustomobject]@{
         Name = 'MSVC x64/x86 build tools'
-        Id = 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'
+        Ids = @('Microsoft.VisualStudio.Component.VC.Tools.x86.x64')
     }
     [pscustomobject]@{
         Name = 'Windows 11 SDK 10.0.26100'
-        Id = 'Microsoft.VisualStudio.Component.Windows11SDK.26100'
+        Ids = @('Microsoft.VisualStudio.Component.Windows11SDK.26100')
     }
     [pscustomobject]@{
         Name = 'Visual Studio Tools for Unreal Engine'
-        Id = 'Microsoft.VisualStudio.Component.VC.Unreal'
+        Ids = @(
+            'Component.Unreal'
+            'Microsoft.VisualStudio.Component.VC.Unreal'
+        )
     }
     [pscustomobject]@{
         Name = 'Blueprint debugger tools'
-        Id = 'Microsoft.VisualStudio.Component.VC.Unreal.Blueprint'
+        Ids = @(
+            'Component.Unreal.Debugger'
+            'Microsoft.VisualStudio.Component.VC.Unreal.Blueprint'
+        )
     }
     [pscustomobject]@{
         Name = 'Unreal Engine Test Adapter'
-        Id = 'Microsoft.VisualStudio.Component.VC.Unreal.TestAdapter'
+        Ids = @(
+            'Microsoft.VisualStudio.Component.Unreal.TestAdapter'
+            'Microsoft.VisualStudio.Component.VC.Unreal.TestAdapter'
+        )
     }
 )
 
 foreach ($component in $vsComponents) {
     $componentInstall = $null
+    $matchedComponentId = $null
     if ($vswhere) {
-        $componentInstall = (& $vswhere -latest -products '*' -requires $component.Id -property installationPath |
-            Select-Object -First 1)
+        foreach ($componentId in $component.Ids) {
+            $componentInstall = (& $vswhere -latest -products '*' -requires $componentId -property installationPath |
+                Select-Object -First 1)
+            if ($componentInstall) {
+                $matchedComponentId = $componentId
+                break
+            }
+        }
     }
 
     if ($componentInstall) {
-        Add-CheckResult $component.Name 'OK' $component.Id $true
+        Add-CheckResult $component.Name 'OK' $matchedComponentId $true
     }
     else {
-        Add-CheckResult $component.Name 'MISSING' $component.Id $true
+        Add-CheckResult $component.Name 'MISSING' ($component.Ids -join ' or ') $true
     }
 }
 
@@ -268,6 +284,7 @@ else {
 
 $displayResults = $results | Select-Object Item, Status, Details
 $table = $displayResults | Format-Table -AutoSize -Wrap | Out-String -Width 220
+$table = (($table -split '\r?\n') | ForEach-Object { $_.TrimEnd() }) -join [Environment]::NewLine
 $blocking = @($results | Where-Object { $_.Critical -and $_.Status -eq 'MISSING' })
 
 $summary = if ($blocking.Count -eq 0) {
