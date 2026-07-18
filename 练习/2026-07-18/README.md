@@ -77,16 +77,28 @@
 
 | 测试 | Base Color | Metallic | Roughness | 自己观察到的变化 |
 |---|---|---:|---:|---|
-| A | 任意非黑色 | 0 | 0 | |
-| B | 与A相同 | 0 | 1 | |
-| C | 与A相同 | 1 | 0 | |
-| D | 与A相同 | 1 | 1 | |
+| A | 任意非黑色 | 0 | 0 | 没有金属感，我认为会有点类似于陶瓷的质感 |
+| B | 与A相同 | 0 | 1 | 高光会散开、模糊 |
+| C | 与A相同 | 1 | 0 | 金属感很强烈，高光比较集中 |
+| D | 与A相同 | 1 | 1 | 金属感和高光都模糊掉了 |
 
 需要能够用自己的话说明：
 
-- Roughness 从0变到1时，高光范围和清晰度如何变化。
-- Metallic 从0变到1时，材质的反射和底色表现如何变化。
-- Base Color、Normal 与 Emissive Color 各自控制什么。
+- Roughness 从0变到1时，高光范围和清晰度如何变化。——高光范围从小变大。
+- Metallic 从0变到1时，材质的反射和底色表现如何变化。——反射会变强，底色变金属质感。
+- Base Color、Normal 与 Emissive Color 各自控制什么。——各自控制基础色、参与光照计算的表面法线方向，以及自发光颜色和强度。
+
+### 参数观察验收
+
+结论：通过。
+
+- [A：Metallic 0、Roughness 0](../../记录/evidence/2026-07-18/ue_pbr_test_A_M0_R0.png)
+- [B：Metallic 0、Roughness 1](../../记录/evidence/2026-07-18/ue_pbr_test_B_M0_R1.png)
+- [C：Metallic 1、Roughness 0](../../记录/evidence/2026-07-18/ue_pbr_test_C_M1_R0.png)
+- [D：Metallic 1、Roughness 1](../../记录/evidence/2026-07-18/ue_pbr_test_D_M1_R1.png)
+- [观察记录截图](../../记录/evidence/2026-07-18/ue_pbr_observation_notes.png)
+
+Codex复核补充：四组截图的Base Color相同，Specular均为0.5，只改变Metallic与Roughness。观察方向正确；更精确地说，D组中变模糊的是环境反射和高光，而Metallic仍保持为1。Roughness从0升到1时，高光范围变宽，同时清晰度下降。
 
 ## C. 证据命名
 

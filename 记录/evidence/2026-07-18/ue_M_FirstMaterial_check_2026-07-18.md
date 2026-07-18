@@ -24,6 +24,11 @@ FHOU编辑器日志显示：
 - [球体缩放](./ue_sphere_scale.png)
 - [`M_FirstMaterial`材质编辑器](./ue_M_FirstMaterial_editor.png)
 - [材质应用到球体](./ue_M_FirstMaterial_sphere.png)
+- [PBR测试A：Metallic 0、Roughness 0](./ue_pbr_test_A_M0_R0.png)
+- [PBR测试B：Metallic 0、Roughness 1](./ue_pbr_test_B_M0_R1.png)
+- [PBR测试C：Metallic 1、Roughness 0](./ue_pbr_test_C_M1_R0.png)
+- [PBR测试D：Metallic 1、Roughness 1](./ue_pbr_test_D_M1_R1.png)
+- [参数观察文字截图](./ue_pbr_observation_notes.png)
 
 ## 验收结论
 
@@ -35,9 +40,6 @@ FHOU编辑器日志显示：
 - 找到Base Color、Metallic、Roughness、Normal和Emissive Color输入；
 - 把材质应用到球体并保存关卡改动。
 
-仍待完成：
-
-- 在同一灯光、相机和球体条件下完成Metallic/Roughness四组参数对比；
-- 用自己的话记录高光、反射和底色的变化。
+四组参数对比已完成：Base Color保持一致，Specular固定为0.5，只改变Metallic与Roughness；参数值和预览效果在同一截图中可见。学习者已经用自己的话记录高光、反射和底色变化，核心方向正确。复核补充：D组中变模糊的是环境反射和高光，而不是Metallic数值本身；Roughness升高时高光范围变宽、清晰度下降。
 
 本次产出是“第一个传统材质练习”，不等同于第一阶段的“参数化PBR母材质和三个材质实例”硬门槛。
