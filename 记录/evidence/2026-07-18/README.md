@@ -5,8 +5,8 @@
 ## 必须证据
 
 - [x] [UE与Visual Studio环境检查记录](./环境检查_2026-07-17.md)。
-- [ ] 完成后的`pointer_practice.cpp`。
-- [ ] 指针练习编译和运行结果。
+- [x] 完成后的[`pointer_practice.cpp`](../../../练习/2026-07-18/pointer_practice.cpp)。
+- [x] [指针练习最终编译和运行结果](./cpp_pointer_build_2026-07-18.txt)。
 - [ ] UE版本与最小C++项目路径。
 - [ ] UE C++项目编译成功截图。
 - [ ] Unreal Editor实际打开项目的截图。
@@ -29,4 +29,4 @@ ue_M_FirstMaterial_sphere.png
 
 只有截图而没有源代码或UE工程，不能通过相应验收。
 
-当前已有[指针练习首次编译记录](./cpp_pointer_build_2026-07-18.txt)，证明Visual Studio项目能够编译运行；由于源文件仍有`TODO`，暂不勾选“完成后的代码”和“练习结果”。
+指针练习已通过Debug x64最终重建与运行验收。内存地址会随每次运行变化，不把固定地址作为验收条件。

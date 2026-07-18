@@ -1,4 +1,4 @@
-C++ POINTER PRACTICE BUILD CHECK
+C++ POINTER PRACTICE FINAL BUILD CHECK
 Date: 2026-07-18
 
 Solution:
@@ -13,20 +13,26 @@ MSVC toolset 14.50.35717
 Platform toolset v145
 Configuration Debug|x64
 
-Build result:
+Final build result:
 PointerPractice.vcxproj -> Binaries\Debug\pointer_practice.exe
 Build succeeded.
 
 Program output:
 10
-000000488D7FFA94
-000000488D7FFA94
+00000031AC14F794
+00000031AC14F794
 10
+20
+8
 nullPointer = 0000000000000000
+30
 
 Program exit code: 0
 
 Notes:
 - The two identical non-zero addresses are &a and p.
+- The value 20 proves that assigning through *p changed a.
+- The value 8 is sizeof(p) in the x64 build.
+- The final value 30 is read through the pointer-to-const after point2 changed first.
 - Memory addresses change between runs.
-- This only proves the current partial source compiles and runs. The TODO exercises are not yet complete.
+- All seven pointer practice requirements passed.
