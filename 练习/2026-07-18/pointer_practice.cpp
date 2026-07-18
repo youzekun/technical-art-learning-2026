@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main()
 {
     int a = 10;
@@ -8,12 +8,13 @@ int main()
     int* p;
     p = &a;
     // TODO 2：依次输出a、&a、p和*p。
-    std::cout << a << std::endl;
-    std::cout << &a << std::endl;
-    std::cout << p << std::endl;
-    std::cout << *p << std::endl;
+    cout << a << endl;
+    cout << &a << endl;
+    cout << p << endl;
+    cout << *p << endl;
     // TODO 3：只通过p把a修改为20，然后输出a。
-
+    *p = 20;
+    cout << a << endl;
     // TODO 4：输出sizeof(p)，并在下方注释中解释这个大小代表什么。
 
     int* nullPointer = nullptr;
