@@ -10,6 +10,8 @@
 - [x] [Visual Studio代码与成功运行截图](./cpp_pointer_visual_studio_run.png)。
 - [x] [7题口头自测答案](../../../练习/2026-07-18/README.md#口头自测)。
 - [x] [黑马C++课程进度到第63节截图](./cpp_course_progress_63.png)。
+- [x] [UE5 First Hour课程完成截图](./ue_first_hour_course_complete.png)。
+- [x] [FHOU工程结构与打包产物核验记录](./ue_first_hour_project_check_2026-07-18.md)。
 - [ ] UE版本与最小C++项目路径。
 - [ ] UE C++项目编译成功截图。
 - [ ] Unreal Editor实际打开项目的截图。
@@ -33,3 +35,5 @@ ue_M_FirstMaterial_sphere.png
 只有截图而没有源代码或UE工程，不能通过相应验收。
 
 指针练习已通过Debug x64最终重建与运行验收。内存地址会随每次运行变化，不把固定地址作为验收条件。
+
+`D:\MY UE5 program\FHOU\FHOU.uproject`已确认是UE 5.8蓝图项目，包含429个内容文件并已生成Windows打包产物，因此First Hour跟做通过。该工程没有`Source`目录和C++模块，最小UE C++项目验收继续保持未完成。

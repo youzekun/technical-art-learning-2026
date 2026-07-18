@@ -64,7 +64,7 @@
 
 ### 必做
 
-- [ ] 在编辑器中指出 Viewport、World Outliner、Details、Content Browser。
+- [x] 在编辑器中指出 Viewport、World Outliner、Details、Content Browser。
 - [ ] 调整球体的 Location、Rotation、Scale。
 - [ ] 找到 Base Color、Metallic、Roughness、Normal、Emissive Color 输入。
 - [ ] 保存材质节点图与球体最终效果截图。
