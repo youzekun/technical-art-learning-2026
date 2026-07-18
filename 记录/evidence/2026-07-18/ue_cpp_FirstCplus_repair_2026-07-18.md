@@ -83,6 +83,8 @@ MapCheck: 0 errors, 0 warnings
 
 新日志中没有`Incompatible or missing module`、`BlueprintGraphClasses.h`或`Result: Failed`记录。
 
+编辑器成功打开截图：[`ue_cpp_FirstCplus_editor_open.png`](./ue_cpp_FirstCplus_editor_open.png)。
+
 ## 结论
 
-插件兼容性故障已修复，`FirstCplusEditor`能够成功编译并在UE 5.8中启动。还需保存一张编辑器成功打开`FirstCplus`的截图，完成仓库中的可视化证据。
+插件兼容性故障已修复，`FirstCplusEditor`能够成功编译并在UE 5.8中启动。编译输出、启动日志和编辑器截图均已保存，UE C++环境验收通过。

@@ -1,3 +1,3 @@
 日期,计划时长,实际时长,C++任务,UE5或材质任务,独立产出,能否重做,问题,证据路径,完成状态,下一任务
 2026-07-17,0,0,已完成黑马C++第55节,尚未系统开始UE5,独立完成数组打印逆置和冒泡排序分文件案例,能,,C++基线/,基线已确认,2026-07-18启动日
-2026-07-18,5,,黑马第56至63节已学习；指针代码与7题口头自测已验证,完成UE5 First Hour跟做和Windows打包；FirstCplus已构建并启动；首个材质待完成,完成指针与三种const指针练习；FHOU工程和FirstCplus C++工程可检查,指针能；UE跟做尚未从空白独立重做,FirstCplus项目级VisualStudioTools插件与UE5.8不兼容；已禁用并修复,记录/evidence/2026-07-18/,C++指针和UE5 First Hour已验证；UE C++环境待补编辑器截图,保存FirstCplus打开截图并创建M_FirstMaterial
+2026-07-18,5,,黑马第56至63节已学习；指针代码与7题口头自测已验证,完成UE5 First Hour跟做和Windows打包；FirstCplus已构建启动并保存编辑器截图；首个材质待完成,完成指针与三种const指针练习；FHOU工程和FirstCplus C++工程可检查,指针能；UE跟做尚未从空白独立重做,FirstCplus项目级VisualStudioTools插件与UE5.8不兼容；已禁用并修复,记录/evidence/2026-07-18/,C++指针和UE5 First Hour已验证；UE C++环境硬门槛已验证,创建M_FirstMaterial并完成参数观察
