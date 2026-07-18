@@ -5,9 +5,13 @@ int main()
     int a = 10;
 
     // TODO 1：声明一个指向a的整型指针p。
-
+    int* p;
+    p = &a;
     // TODO 2：依次输出a、&a、p和*p。
-
+    std::cout << a << std::endl;
+    std::cout << &a << std::endl;
+    std::cout << p << std::endl;
+    std::cout << *p << std::endl;
     // TODO 3：只通过p把a修改为20，然后输出a。
 
     // TODO 4：输出sizeof(p)，并在下方注释中解释这个大小代表什么。

@@ -12,6 +12,18 @@
 
 如果当日时间不足，只完成“必做”，不要加倍补课。
 
+## 在Visual Studio中打开与运行
+
+直接双击[`PointerPractice.sln`](./PointerPractice.sln)打开完整项目，不要只单独打开`.cpp`文件。
+
+打开后：
+
+1. 等待Visual Studio加载项目。
+2. 确认顶部配置为`Debug`和`x64`。
+3. 按`Ctrl + F5`编译并运行。
+
+编译输出位于`Binaries/Debug/`，中间文件位于`Intermediate/Debug/`；这两个目录不会提交到Git。
+
 ## A. 指针练习
 
 ### 必做

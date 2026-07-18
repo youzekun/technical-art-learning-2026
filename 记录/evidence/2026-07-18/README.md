@@ -28,3 +28,5 @@ ue_M_FirstMaterial_sphere.png
 ```
 
 只有截图而没有源代码或UE工程，不能通过相应验收。
+
+当前已有[指针练习首次编译记录](./cpp_pointer_build_2026-07-18.txt)，证明Visual Studio项目能够编译运行；由于源文件仍有`TODO`，暂不勾选“完成后的代码”和“练习结果”。

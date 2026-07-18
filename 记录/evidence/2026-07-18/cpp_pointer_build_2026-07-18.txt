@@ -1,0 +1,32 @@
+C++ POINTER PRACTICE BUILD CHECK
+Date: 2026-07-18
+
+Solution:
+C:\Users\Administrator\OneDrive\Desktop\技术美术\练习\2026-07-18\PointerPractice.sln
+
+Source:
+C:\Users\Administrator\OneDrive\Desktop\技术美术\练习\2026-07-18\pointer_practice.cpp
+
+Toolchain:
+Visual Studio Community 2026
+MSVC toolset 14.50.35717
+Platform toolset v145
+Configuration Debug|x64
+
+Build result:
+PointerPractice.vcxproj -> Binaries\Debug\pointer_practice.exe
+Build succeeded.
+
+Program output:
+10
+000000488D7FFA94
+000000488D7FFA94
+10
+nullPointer = 0000000000000000
+
+Program exit code: 0
+
+Notes:
+- The two identical non-zero addresses are &a and p.
+- Memory addresses change between runs.
+- This only proves the current partial source compiles and runs. The TODO exercises are not yet complete.
