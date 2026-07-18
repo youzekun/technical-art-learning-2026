@@ -8,6 +8,7 @@
 - [x] 完成后的[`pointer_practice.cpp`](../../../练习/2026-07-18/pointer_practice.cpp)。
 - [x] [指针练习最终编译和运行结果](./cpp_pointer_build_2026-07-18.txt)。
 - [x] [7题口头自测答案](../../../练习/2026-07-18/README.md#口头自测)。
+- [x] [黑马C++课程进度到第63节截图](./cpp_course_progress_63.png)。
 - [ ] UE版本与最小C++项目路径。
 - [ ] UE C++项目编译成功截图。
 - [ ] Unreal Editor实际打开项目的截图。
