@@ -65,9 +65,11 @@
 ### 必做
 
 - [x] 在编辑器中指出 Viewport、World Outliner、Details、Content Browser。
-- [ ] 调整球体的 Location、Rotation、Scale。
-- [ ] 找到 Base Color、Metallic、Roughness、Normal、Emissive Color 输入。
-- [ ] 保存材质节点图与球体最终效果截图。
+- [x] 调整球体的 Location、Rotation、Scale。
+- [x] 找到 Base Color、Metallic、Roughness、Normal、Emissive Color 输入。
+- [x] 保存材质编辑器与球体最终效果截图。
+
+保存与验收证据：[工程文件、日志和截图核验记录](../../记录/evidence/2026-07-18/ue_M_FirstMaterial_check_2026-07-18.md)。
 
 ### 参数观察
 

@@ -18,8 +18,10 @@
 - [x] [UE C++项目编译成功输出](./ue_cpp_FirstCplus_build_2026-07-18.txt)。
 - [x] [Unreal Editor实际打开FirstCplus项目的截图](./ue_cpp_FirstCplus_editor_open.png)。
 - [x] [Viewport、World Outliner、Details和Content Drawer截图](./ue_cpp_FirstCplus_editor_open.png)。
-- [ ] `M_FirstMaterial`节点图。
-- [ ] 材质应用到球体的效果图。
+- [x] [`M_FirstMaterial`材质编辑器截图](./ue_M_FirstMaterial_editor.png)。
+- [x] [材质应用到球体的效果图](./ue_M_FirstMaterial_sphere.png)。
+- [x] 球体Transform操作截图：[移动](./ue_sphere_move.png)、[旋转30度](./ue_sphere_rotate_30deg.png)、[缩放](./ue_sphere_scale.png)。
+- [x] [`M_FirstMaterial`工程文件、日志与截图验收记录](./ue_M_FirstMaterial_check_2026-07-18.md)。
 
 ## 建议文件名
 
@@ -41,3 +43,5 @@ ue_M_FirstMaterial_sphere.png
 `D:\MY UE5 program\FHOU\FHOU.uproject`已确认是UE 5.8蓝图项目，包含429个内容文件并已生成Windows打包产物，因此First Hour跟做通过。该工程本身没有`Source`目录和C++模块，不能单独作为C++环境证据。
 
 `D:\MY UE5 program\FirstCplus\FirstCplus.uproject`已成功构建、启动并保存编辑器截图。原故障来自与UE 5.8不兼容的项目级`VisualStudioTools`插件；插件已禁用，原配置已在工程旁备份。UE C++开发环境验收通过。
+
+`D:\MY UE5 program\FHOU\Content\FHOU\M_FirstMaterial.uasset`已保存并编译，资产验证报告0个问题；球体Transform操作、材质编辑器和最终应用效果均有截图。四组Metallic/Roughness参数观察仍待完成。
