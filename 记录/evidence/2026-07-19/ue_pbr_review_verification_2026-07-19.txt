@@ -1,0 +1,30 @@
+UE基础PBR材质磁盘与引用检查
+日期：2026-07-19
+工程：D:\MY UE5 program\FHOU\FHOU.uproject
+
+材质资产：
+D:\MY UE5 program\FHOU\Content\Blueprint_Actor\M_PBRReview.uasset
+修改时间：2026-07-19 15:31:20
+文件大小：11212 bytes
+
+Blueprint资产：
+D:\MY UE5 program\FHOU\Content\Blueprint_Actor\BP_TransformPractice.uasset
+修改时间：2026-07-19 15:32:37
+文件大小：28905 bytes
+
+截图参数：
+- Base Color：非黑色橙色
+- Metallic：0.0
+- Specular：0.5
+- Roughness：0.4
+
+资产引用检查：
+BP_TransformPractice.uasset中已找到：
+- /Game/Blueprint_Actor/M_PBRReview
+- M_PBRReview
+
+保存状态：
+编辑器最终状态截图显示“所有已保存”。
+
+验收结论：
+M_PBRReview创建、参数设置、应用到Cube Static Mesh Component及保存全部通过。
