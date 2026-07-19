@@ -25,10 +25,25 @@ Unreal Editor 与 Live Coding Console 仍在运行，Unreal Build Tool 提示：
 Result: Succeeded
 Total execution time: 64.70 seconds
 
+资源显示问题与处理：
+项目没有 Content/StarterContent/Shapes/Shape_Cube.uasset，
+因此教程原路径 /Game/StarterContent/Shapes/Shape_Cube.Shape_Cube 无法加载模型。
+已改用引擎自带路径 /Engine/BasicShapes/Cube.Cube。
+修改后再次构建成功：
+- FloatingActor.cpp 编译成功
+- UnrealEditor-FirstCplus.dll 链接成功
+- 最终DLL时间 2026-07-19 16:47:20，晚于.h和.cpp源码时间
+
+最终实现：
+- FloatingActor已放入关卡并显示Cube
+- FloatSpeed与RotationSpeed已暴露到Details面板
+- 截图中FloatSpeed为60，RotationSpeed为20
+- 编辑器状态显示“所有已保存”
+
 说明：
 Visual Studio 错误列表中来自 UE 内部模板头文件的 E0842、E0094 属于 IntelliSense 分析提示，
 并非这次 Unreal Build Tool 构建失败的实际原因。真正的构建流程已经成功通过。
 
-后续运行验收：
-需要在 Unreal Editor 中把 FloatingActor 放入关卡并按 Play，
-观察网格是否上下浮动并持续旋转。
+运行验收：
+用户确认已经完成官方教程实现；源码、编译产物、关卡中的Cube实例、
+可编辑参数和保存状态均已通过检查。
