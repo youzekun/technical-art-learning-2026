@@ -1,0 +1,34 @@
+UE C++ Quick Start：FloatingActor 构建验证
+日期：2026-07-19
+
+项目：
+D:\MY UE5 program\FirstCplus\FirstCplus.uproject
+
+引擎：
+D:\Epic UE5\UE_5.8
+
+目标：
+FirstCplusEditor Win64 Development
+
+首次失败的准确原因：
+Unreal Editor 与 Live Coding Console 仍在运行，Unreal Build Tool 提示：
+"Unable to build while Live Coding is active."
+
+处理：
+1. 正常关闭 Unreal Editor，让 Live Coding Console 一并退出。
+2. 重新执行 Development Editor 构建。
+3. 构建过程中 FloatingActor.cpp 编译成功。
+4. 成功链接 UnrealEditor-FirstCplus.dll。
+5. 重新打开 FirstCplus.uproject，编辑器正常启动。
+
+最终结果：
+Result: Succeeded
+Total execution time: 64.70 seconds
+
+说明：
+Visual Studio 错误列表中来自 UE 内部模板头文件的 E0842、E0094 属于 IntelliSense 分析提示，
+并非这次 Unreal Build Tool 构建失败的实际原因。真正的构建流程已经成功通过。
+
+后续运行验收：
+需要在 Unreal Editor 中把 FloatingActor 放入关卡并按 Play，
+观察网格是否上下浮动并持续旋转。

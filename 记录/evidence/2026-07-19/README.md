@@ -19,6 +19,7 @@
 - [x] [材质磁盘保存与Blueprint引用检查](./ue_pbr_review_verification_2026-07-19.txt)
 - [x] [三道C++口头自测](../../../练习/2026-07-19/README.md#口头自测)
 - [x] [Actor、Component、Transform口头自测与截图](../../../02_当前任务_2026-07-19.md#2-ue-actorcomponent与transform15小时)
+- [x] [UE C++ Quick Start：`FloatingActor` Development Editor构建记录](./ue_cpp_floating_actor_build_2026-07-19.txt)
 
 只有截图而没有源代码或UE工程，不能通过相应验收。
 
@@ -29,3 +30,5 @@ UE Transform操作已通过两层验收：截图证明已创建`BP_TransformPrac
 Actor、Component、Transform口头自测核心概念正确，精确表述已补充到当前任务文件中。截图证据见[`ue_actor_component_transform_oral_test.png`](./ue_actor_component_transform_oral_test.png)。
 
 `M_PBRReview`已通过两层验收：材质编辑器截图显示Base Color为非黑色、Metallic为0、Specular为0.5、Roughness为0.4；Blueprint截图显示材质已经应用到Cube Static Mesh Component，二进制资产检查也确认`BP_TransformPractice.uasset`保存了对`/Game/Blueprint_Actor/M_PBRReview`的引用。
+
+加练的UE C++ Quick Start已通过“源码构建层”验收：关闭仍在运行的Unreal Editor和Live Coding Console后，`FirstCplusEditor Win64 Development`完整构建成功，`FloatingActor.cpp`已编译并成功链接到`UnrealEditor-FirstCplus.dll`。下一步仍需在关卡中放置`FloatingActor`并通过Play完成“运行效果层”验收。
