@@ -1,0 +1,19 @@
+UE Transform磁盘保存检查
+日期：2026-07-19
+工程：D:\MY UE5 program\FHOU\FHOU.uproject
+
+已确认资产：
+1. D:\MY UE5 program\FHOU\Content\Blueprint_Actor\BP_TransformPractice.uasset
+   修改时间：2026-07-19 15:18:32
+   文件大小：28917 bytes
+
+2. D:\MY UE5 program\FHOU\Content\__ExternalActors__\ThirdPerson\Lvl_ThirdPerson\0\V5\Y02MIXL0D4MTT11E7SEARH.uasset
+   修改时间：2026-07-19 15:18:32
+   文件大小：4695 bytes
+
+说明：
+- 编辑器最终状态截图显示“所有已保存”。
+- Lvl_ThirdPerson使用外部Actor保存方式，关卡内的BP_TransformPractice实例写入__ExternalActors__目录，因此Lvl_ThirdPerson.umap本体时间不变不代表关卡实例没有保存。
+- 截图证据覆盖Blueprint资产、Components层级、Details面板、Location、Rotation和Scale操作。
+
+验收结论：BP_TransformPractice操作与保存通过。

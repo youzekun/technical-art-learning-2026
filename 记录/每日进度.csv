@@ -1,4 +1,4 @@
 日期,计划时长,实际时长,C++任务,UE5或材质任务,独立产出,能否重做,问题,证据路径,完成状态,下一任务
 2026-07-17,0,0,已完成黑马C++第55节,尚未系统开始UE5,独立完成数组打印逆置和冒泡排序分文件案例,能,,C++基线/,基线已确认,2026-07-18启动日
 2026-07-18,5,7,黑马第56至63节已学习；指针代码与7题口头自测已验证,完成UE5 First Hour跟做和Windows打包；FirstCplus已构建启动；M_FirstMaterial及四组PBR参数观察已验证,完成指针与三种const指针练习；FHOU和FirstCplus工程可检查；球体Transform、首个材质及四组参数对比有截图,指针与首个材质能；UE First Hour完整流程为跟做且尚未从空白复测,FirstCplus项目级VisualStudioTools插件与UE5.8不兼容；已禁用并修复,记录/evidence/2026-07-18/,7月18日启动日计划全部完成并通过证据验收,独立完成指针参数版数组打印并复习逆置或排序
-2026-07-19,5,,指针参数版数组打印、首尾指针逆置和额外冒泡排序已编译运行并通过口头自测,练习Actor、Component、Transform并从空白复做基础PBR材质,完成可运行的指针数组程序和三道口头自测,C++部分能独立重做；UE部分等待验收,,记录/evidence/2026-07-19/,C++独立练习已验证；UE与材质任务进行中,创建BP_TransformPractice并完成Transform练习
+2026-07-19,5,,指针参数版数组打印、首尾指针逆置和额外冒泡排序已编译运行并通过口头自测,已创建并保存BP_TransformPractice且完成Location、Rotation和Scale；M_PBRReview待完成,完成可运行的指针数组程序、三道C++口头自测和Blueprint Transform练习,C++能独立重做；UE操作已通过截图和磁盘验证；UE概念口头自测待回答,首次截图显示3项未保存，随后保存全部并通过磁盘检查,记录/evidence/2026-07-19/,C++与UE Transform已验证；UE口头自测和材质任务进行中,回答Actor、Component、Transform并完成M_PBRReview
