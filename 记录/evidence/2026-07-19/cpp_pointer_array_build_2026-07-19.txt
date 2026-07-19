@@ -1,0 +1,21 @@
+验收日期：2026-07-19
+项目：练习/2026-07-19/PointerArrayPractice.sln
+配置：Debug x64
+
+重新生成结果：
+
+  pointer_array_practice.cpp
+  PointerArrayPractice.vcxproj -> 练习\2026-07-19\Binaries\Debug\pointer_array_practice.exe
+
+运行结果：
+
+Original array:
+4 2 8 0 5 7 1 3 9
+Reversed array:
+9 3 1 7 5 0 8 2 4
+Bub array:
+0 1 2 3 4 5 7 8 9
+
+进程退出代码：0
+
+Codex验收：编译、数组打印、首尾指针逆置和额外冒泡排序均通过。
